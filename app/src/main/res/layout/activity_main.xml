@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="css.cis3334.nehrenberg.inclass2_3.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bill Amount:"
+        android:id="@+id/textViewAmount" />
+
+    <TextView
+        android:text="Total Tip:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCalc"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewTotal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextAmount"
+        android:layout_below="@+id/textViewAmount"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Number in Party:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNumber"
+        android:layout_below="@+id/editTextAmount"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/textViewNumber"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editTextNumber" />
+
+    <Button
+        android:text="Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCalc"
+        android:layout_below="@+id/editTextNumber"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick" />
+
+    <TextView
+        android:text="Tip Per Person:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTotal"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textViewTipPerPerson" />
+
+</RelativeLayout>
